@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reconocimiento Facial</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons.flaticon.com/png/512/1292/premium/1292932.png?token=exp=1634514194~hmac=529bab82a1a7e8444c8226ff6d6a393f"
+    />
+    <script src="face-api.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(3, 246, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(3, 246, 255, 1) 0%,
+          rgba(25, 238, 210, 1) 20%,
+          rgba(52, 175, 217, 1) 45%,
+          rgba(64, 164, 202, 1) 59%,
+          rgba(27, 208, 196, 1) 80%,
+          rgba(0, 212, 255, 1) 100%
+        );
+      }
+      canvas {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <video id="video" width="720" height="560" autoplay muted></video>
+    <script src="script.js"></script>
+    <div id="wave"></div>
+  </body>
+</html>
